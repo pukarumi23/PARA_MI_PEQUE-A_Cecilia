@@ -22,7 +22,7 @@ body{
 }
 
 .botones a{
-    background-color: #0a2be9;
+    background-color: #a2e90a;
     padding: 9px;
     border-radius: 80px;
     -webkit-border-radius: 80px;
@@ -37,11 +37,11 @@ body{
 }
 
 .greetings{
-    font-size: 7rem;
-    font-weight: 900;
+    font-size: 9rem;
+    font-weight: 1000;
 }
 .greetings > span{
-    animation: glow 2.5s ease-in-out infinite;
+    animation: glow 2.6s ease-in-out infinite;
 }
 @keyframes glow{
     0%, 100%{
@@ -68,10 +68,21 @@ body{
 .greetings > span:nth-child(6){
     animation-delay: 1s;
 }
+.greetings > span:nth-child(7){
+    animation-delay: 1s;
+}
+.greetings > span:nth-child(8){
+    animation-delay: 1s;
+}
 
 .description{
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+.fuente-especial {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
 }
 
 .button a{
@@ -83,7 +94,7 @@ body{
 @media screen and (max-width:574px){
     .greetings{
         display: block;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 800;
         text-align: center;
     }
@@ -94,4 +105,30 @@ body{
     .button a{
         font-size: 1rem;
     }
+}
+
+.neon-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    color: #fff;
+    background: #FFD700; /* dorado */
+    border: none;
+    border-radius: 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow:
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 40px #FFD700;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+.neon-btn:hover {
+    background: #FFC300; /* dorado más intenso */
+    box-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 40px #FFD700,
+        0 0 80px #FFC300;
 }
